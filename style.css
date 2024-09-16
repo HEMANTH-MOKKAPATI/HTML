@@ -1,11 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: gilroy;
+  font-family: Inter, sans-serif;
 }
 html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #f5f3ef;
+  color: #1e1e21;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  /*background-color: cyan;*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 0px 40px;
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+
+nav h3 {
+  border: 2px solid #1e1e21;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 500px;
+  background-color: black;
+  color: white;
+  font-weight: 50;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+main h1 {
+  /* height: 100%; */
+  font-size: 145px;
+  font-weight: 600;
+  line-height: 90%;
+  padding: 30px 60px;
+  letter-spacing: -3px;
+  padding-top: 60px;
+}
+
+.place {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  padding-bottom: 30px;
+}
+
+.place h3,
+.place h4 {
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 90%;
+}
+
+.hero-image {
+  height: 87%;
+  width: 100%;
+  background-image: url("https://cdn.prod.website-files.com/64589fb989b2b33c593db89d/6458a6db645ec6a527000cfa_home-hero.webp");
+  background-size: cover;
+}
+
+#about {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+
+}
+#about h2{
+font-size: 91px;
+width: 63%;
+line-height: 100%;
+padding: 0 35px;
+font-weight: 600;
+}
+
+#about-right {
+  width: 35%;
+  height: 75%;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 2px solid black;
+
+}
+
+#about-right h3 {
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 90%;
+}
+
+#icons {
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
 }
